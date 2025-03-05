@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+
+   <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+   <div class="app">
+
+      <div class="screen join-screen">
+         <div class="form">
+            <h2>Join Chatroom</h2>
+            <div class="form-input">
+               <label for="username">Username</label>
+               <input type="text" id="username">
+            </div>
+            <div class="form-input">
+               <button id="join-user">Join</button>
+            </div>
+         </div>
+      </div>
+
+      <div class="screen active chat-screen">
+         <div class="header">
+            <div class="logo">Chatroom</div>
+            <button id="exit-chat">Exit</button>
+         </div>
+
+         <div class="messages">
+            <!-- Dummy Messages -->
+            <div class="message my-message">
+               <div>
+                  <div>
+                     <div class="name">You</div>
+                     <div class="test">Hi</div>
+                  </div>
+               </div>
+            </div>
+
+            <div class="update">
+               ABS is joined the conversation
+            </div>
+
+            <div class="message other-message">
+               <div>
+                  <div class="name">ABC</div>
+                  <div class="text">Hi</div>
+               </div>
+            </div>
+            <!-- Dummy Messages -->
+         </div>
+
+         <div class="typebox">
+            <input type="text" id="message-input">
+            <button id="send-message">Send</button>
+         </div>
+      </div>
+
+   </div> <!-- End App -->
+
+
+
+   <script type="text/javascript" src="socket.io/socket.io.js"></script>
+   <script type="text/javascript" src="code.js"></script>
+</body>
+
+</html>
